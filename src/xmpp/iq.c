@@ -1654,6 +1654,10 @@ _version_get_handler(xmpp_stanza_t* const stanza)
             xmpp_stanza_set_text(os_txt, "NetBSD");
 #elif defined(__OpenBSD__)
             xmpp_stanza_set_text(os_txt, "OpenBSD");
+#elif defined(__DragonFly__)
+            xmpp_stanza_set_text(os_txt, "DragonFlyBSD");
+#elif defined(__illumos__)
+            xmpp_stanza_set_text(os_txt, "Illumos");
 #else
             xmpp_stanza_set_text(os_txt, "Unknown");
 #endif
